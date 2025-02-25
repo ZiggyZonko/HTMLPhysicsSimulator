@@ -1,0 +1,106 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;  /* Darker black background */
+    color: #fff;  /* Light text color for readability */
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #222222; /* Dark grey for header */
+    text-align: center;
+    padding: 50px 20px; /* Spacious padding */
+}
+
+header h2 {
+    font-size: 2.5rem; /* Larger title for emphasis */
+    color: #ff7043; /* Subtle orange tone */
+}
+
+footer {
+    background-color: #222222; /* Dark footer background */
+    color: #777; /* Lighter footer text */
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    header h2 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .subject-content h2 {
+        font-size: 2rem;
+    }
+
+    .subject-content p {
+        font-size: 1rem;
+    }
+}
+
+section {
+    background-color: #333333;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #ff8964;
+}
+
+nav {
+    background-color: #333333; /* Dark grey for the menu */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #ff7043; /* Subtle orange for links */
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e64a19; /* Darker orange on hover */
+}
+
+nav i {
+    margin-right: 8px; /* Spacing between icon and text */
+}
+
+h3 {
+    color: #ff5f2e;
+    margin-top: 20px;
+}
