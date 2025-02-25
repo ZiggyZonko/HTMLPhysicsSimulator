@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziggy's Maths and Science</title>
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/physics.css">
+    <link rel="stylesheet" href="style/chemistry.css">
+    <link rel="stylesheet" href="style/periodictable.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h2>Welcome to Ziggy's Maths and Science!</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="" class="subject-link" data-target="math"><i class="fas fa-square-root-alt"></i> Mathematics</a></li>
+            <li><a href="" class="subject-link" data-target="chemistry"><i class="fas fa-flask"></i> Chemistry</a></li>
+            <li><a href="" class="subject-link" data-target="physics"><i class="fas fa-atom"></i> Physics</a></li>
+            <li><a href="" class="subject-link" data-target="biology"><i class="fa-solid fa-dna"></i> Biology</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section id="math" class="subject-content">
+            <h2> Mathematics </h2>
+        </section>
+
+        <section id="chemistry" class="subject-content">
+            <h2> Chemistry </h2>
+
+            <br>
+
+            <div class="phborder"> 
+                <br>
+                <h2>pH Level Tester</h2>
+                <p>Add acid or base and see the color change based on the pH level.</p>
+                <br>
+                <button class="acid" onclick="addAcid()">Add Acid</button>
+                <button class="base" onclick="addBase()">Add Base</button>
+
+                <div id="phLevelDisplay">pH: 7.0</div>
+            </div>
+
+                <br>
+
+        </section>
+
+        <section id="physics" class="subject-content">
+
+            <h2> Physics </h2>
+            <canvas id="1" width="700" height="600" style="border: 1px solid black; margin-top: 20px">
+
+            </canvas>
+
+            <div class="slidecontainer">
+                <h5 id='gravityslidertext' class="gravityslidertext"> Gravity </h5>
+                <input type="range" min="1" max="3000" value="1500" class="slider" id="myRange">
+            </div>
+
+            <div>
+                <button type="button" id='spawnBallButton' class="spawnball">Spawn Ball</button>
+            </div>
+
+        </section>
+
+        <section id="biology" class="subject-content">
+            <h2> Biology </h2>
+        </section>
+
+        <script src="scripts/index.js"></script>
+        <script src='scripts/slider.js'></script>
+        <script src='scripts/physicssim.js'></script>
+        <script src='scripts/pHlevel.js'></script>
+        <script src='scripts/periodictable.js'></script>
+    </div>
+
+<footer> Hello 👋</footer>
